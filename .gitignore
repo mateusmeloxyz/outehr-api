@@ -65,5 +65,8 @@ nunit-*.xml
 *.user
 *.suo
 
+# Ignore local settings with secrets
+**/appsettings.Development.json
+
 # Ignore hidden doc files
 .docs/

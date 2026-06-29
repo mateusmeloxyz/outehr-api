@@ -1,0 +1,12 @@
+**/bin
+**/obj
+**/.vs
+**/tests
+*.slnx
+*.user
+*.tmp
+.env
+.git
+.docs
+docker-compose.yml
+Dockerfile

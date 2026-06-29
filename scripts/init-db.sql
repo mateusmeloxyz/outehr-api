@@ -48,6 +48,23 @@ CREATE TABLE UserRoles (
 GO
 
 -- ============================================
+-- Patient (Client) Tables
+-- ============================================
+
+CREATE TABLE Clients (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    FirstName NVARCHAR(100) NOT NULL,
+    LastName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(200) NOT NULL UNIQUE,
+    Phone NVARCHAR(20) NULL,
+    DateOfBirth DATE NULL,
+    IsActive BIT DEFAULT 1,
+    CreatedAt DATETIME DEFAULT GETUTCDATE(),
+    UpdatedAt DATETIME DEFAULT GETUTCDATE()
+);
+GO
+
+-- ============================================
 -- Doctor / Schedule Tables
 -- ============================================
 
@@ -143,6 +160,8 @@ CREATE INDEX IX_Schedules_DateRange ON Schedules(EffectiveFrom, EffectiveTo);
 CREATE INDEX IX_Exceptions_ProviderId_Date ON AvailabilityExceptions(ProviderId, ExceptionDate);
 CREATE INDEX IX_Users_Email ON Users(Email);
 CREATE INDEX IX_Users_Phone ON Users(Phone);
+CREATE INDEX IX_Clients_Email ON Clients(Email);
+CREATE INDEX IX_Clients_Phone ON Clients(Phone);
 
 -- ============================================
 -- View for Common Queries

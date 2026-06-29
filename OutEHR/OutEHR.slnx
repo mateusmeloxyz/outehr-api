@@ -1,1 +1,15 @@
-<Solution />
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OutEHR.Api/OutEHR.Api.csproj" />
+    <Project Path="src/OutEHR.Application/OutEHR.Application.csproj" />
+    <Project Path="src/OutEHR.Domain/OutEHR.Domain.csproj" />
+    <Project Path="src/OutEHR.Infrastructure/OutEHR.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OutEHR.Tests/OutEHR.Tests.csproj" />
+  </Folder>
+  <Project Path="../../../../../../Documents/projects/cloudemployee/outehr/outehr-api/OutEHR/src/OutEHR.Api/OutEHR.Api.csproj" />
+  <Project Path="../../../../../../Documents/projects/cloudemployee/outehr/outehr-api/OutEHR/src/OutEHR.Application/OutEHR.Application.csproj" />
+  <Project Path="../../../../../../Documents/projects/cloudemployee/outehr/outehr-api/OutEHR/src/OutEHR.Domain/OutEHR.Domain.csproj" />
+  <Project Path="../../../../../../Documents/projects/cloudemployee/outehr/outehr-api/OutEHR/src/OutEHR.Infrastructure/OutEHR.Infrastructure.csproj" />
+</Solution>
