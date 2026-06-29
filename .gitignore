@@ -64,3 +64,6 @@ nunit-*.xml
 *.csproj.Backup.tmp
 *.user
 *.suo
+
+# Ignore hidden doc files
+.docs/
