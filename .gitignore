@@ -58,3 +58,9 @@ nunit-*.xml
 
 # VsCode
 .vs
+
+# Ignore temporary backup files
+*.tmp
+*.csproj.Backup.tmp
+*.user
+*.suo
